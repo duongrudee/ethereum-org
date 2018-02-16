@@ -1,33 +1,5 @@
-### The Coin
 
-We are going to create a digital token. Tokens in the Ethereum ecosystem can represent any fungible tradable good: coins, loyalty points, gold certificates, IOUs, in-game items, etc. Since all tokens implement some basic features in a standard way, this also means that your token will be instantly compatible with the Ethereum wallet and any other client or contract that uses the same standards.
-
-#### Minimum Viable Token
-
-The standard token contract can be quite complex. But in essence a very basic token boils down to this:
-
-```
-!!!include(solidity/token-minimal.sol)!!!
-```
-
-#### The code
-
-But if you just want to copy paste a more complete code, then use this:
-
-
-```
-!!!include(solidity/token-erc20.sol)!!!
-```
-
-#### Understanding the code
-
-![Deploy New Contract](/images/tutorial/deploy-new-contract.png)
-
-
-So let's start with the basics. Open the **Wallet** app, go to the *Contracts* tab and then *Deploy New Contract*. On the *Solidity Contract Source code* text field, type the code below:
-
-```
-    contract MyToken {
+    contract STANG TOKEN {
         /* This creates an array with all balances */
         mapping (address => uint256) public balanceOf;
     }
